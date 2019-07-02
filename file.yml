@@ -7,9 +7,9 @@
      read_csv:
        path: ./template.csv
        key: tower-cli
-       
-   
-   
+     register: tower-cli
+    - debug:
+        msg: 'Tower-Cli {{ tower-cli }}'
    
    #tasks:
    #- name: test 
