@@ -1,5 +1,5 @@
  - hosts: localhost
-   #become: yes
+   become: yes
    gather_facts: false
    tasks:
    #- name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
