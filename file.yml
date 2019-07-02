@@ -2,7 +2,7 @@
    
    tasks:
    - name: test 
-     shell: "ls -l && pwd"
+     shell: "pwd"
    
    #- name: File Stat
     # file:
