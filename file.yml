@@ -1,8 +1,11 @@
  - hosts: all
    
    tasks:
-   - name: File Stat
-     file:
-       path: ./template.yml
-       mode: '0446'
-       owner: root
+   - name: test 
+     shell: "ls -l && pwd"
+   
+   #- name: File Stat
+    # file:
+     #  path: ./template.yml
+      # mode: '0446'
+       #owner: root
