@@ -2,7 +2,7 @@
    gather_facts: false
    tasks:
    - name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
-     debug: msg="{{ lookup('file', '/var/lib/awx/projects/*/template.csv', errors='ignore') }}"
+     debug: msg="{{ lookup('file', './template.csv', errors='ignore') }}"
    
    
    
