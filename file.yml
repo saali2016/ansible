@@ -9,7 +9,7 @@
        key: tower-cli
      register: tower-cli
    - debug:
-        msg: 'Tower-Cli {{ tower-cli }}'
+        msg: 'Tower-Cli {{ tower-cli. users.dict.dag.AUTH_LDAP_SERVER_URI}}'
    
    #tasks:
    #- name: test 
