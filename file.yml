@@ -8,7 +8,7 @@
        path: ./template.csv
        key: tower-cli
      register: tower-cli
-    - debug:
+   - debug:
         msg: 'Tower-Cli {{ tower-cli }}'
    
    #tasks:
