@@ -8,7 +8,8 @@
      read_csv:
        path: ./template.csv
      register: users
-  
+   - name: User ID
+     shell: "id"
    #tasks:
    #- name: test 
    #  shell: "pwd"
