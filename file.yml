@@ -3,6 +3,6 @@
    tasks:
    - name: File Stat
      file:
-       path: ./template.csv
+       path: ./template.yml
        mode: '0446'
        owner: root
