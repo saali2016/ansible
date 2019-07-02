@@ -1,7 +1,8 @@
 # Playbook to create IPA user, and change the expiration date for the user in order to disable the password force change
  - hosts: all
- - name: of the file
-   file:
-     path: ./template.csv
-     mode: '0446'
-     owner: root
+ - tasks:
+   - name: of the file
+      file:
+        path: ./template.csv
+        mode: '0446'
+        owner: root
