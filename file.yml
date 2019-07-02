@@ -1,8 +1,13 @@
  - hosts: all
    gather_facts: false
    tasks:
-   - name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
-     debug: msg="{{ lookup('file', './template.csv', errors='ignore') }}"
+   #- name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
+   #  debug: msg="{{ lookup('file', './template.csv', errors='ignore') }}"
+   - name: Using CSV Module
+     read_csv:
+       path: ./template.csv
+       key: tower-cli
+       
    
    
    
