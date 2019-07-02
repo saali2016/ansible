@@ -2,7 +2,7 @@
  - hosts: all
  - tasks:
    - name: of the file
-      file:
+     file:
         path: ./template.csv
         mode: '0446'
         owner: root
