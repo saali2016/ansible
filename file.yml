@@ -4,12 +4,12 @@
    tasks:
    #- name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
    #  debug: msg="{{ lookup('file', './template.csv', errors='ignore') }}"
-   - name: Using CSV Module
-     read_csv:
-       path: ./template.csv
-     register: users
-   - name: User ID
-     shell: "id"
+   #- name: Using CSV Module
+   #  read_csv:
+   #    path: ./template.csv
+   #  register: users
+   #- name: User ID
+   #  shell: "id"
    - name: Checking URI with proxy
      uri:
        url: https://www.google.com/
