@@ -13,6 +13,7 @@
    - name: Checking URI with proxy
      uri:
        url: https://www.google.com/
+   - shell: "echo $http_proxy"
    #tasks:
    #- name: test 
    #  shell: "pwd"
