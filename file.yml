@@ -1,6 +1,6 @@
  - hosts: localhost
-   become: yes
-   gather_facts: false
+ 
+   #gather_facts: false
    tasks:
    #- name: file doesnt exist, but i dont care .. file plugin itself warns anyways ...
    #  debug: msg="{{ lookup('file', './template.csv', errors='ignore') }}"
@@ -13,7 +13,7 @@
    - name: Checking URI with proxy
      uri:
        url: https://www.google.com/
-   - shell: "echo $http_proxy"
+   - shell: "echo $env"
    #tasks:
    #- name: test 
    #  shell: "pwd"
