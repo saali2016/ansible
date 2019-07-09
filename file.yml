@@ -10,10 +10,14 @@
    #  register: users
    #- name: User ID
    #  shell: "id"
-   - name: Checking URI with proxy
-     uri:
-       url: https://192.168.122.104/
-   - shell: "echo $env"
+   #- name: Checking URI with proxy
+   #  uri:
+    #   url: https://192.168.122.104/
+    - name: Get Url
+      get_url:
+        url: https://192.168.122.104
+        dest: /tmp/tower.txt
+   #- shell: "echo $env"
    #tasks:
    #- name: test 
    #  shell: "pwd"
