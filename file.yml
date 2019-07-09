@@ -10,6 +10,9 @@
      register: users
    - name: User ID
      shell: "id"
+   - name: Checking URI with proxy
+     uri:
+       url: https://www.google.com/
    #tasks:
    #- name: test 
    #  shell: "pwd"
