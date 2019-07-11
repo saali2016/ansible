@@ -9,6 +9,9 @@
       host: '{{ lookup("env", "VMWARE_HOST") }}'
       username: '{{ lookup("env", "VMWARE_USER") }}'
       password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
+    cred_vmware_host: '{{ lookup("env", "VMWARE_HOST") }}'
+    cred_vmware_user: '{{ lookup("env", "VMWARE_USER") }}'
+    cred_vmware_password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
    
   tasks:
     - debug:
@@ -16,4 +19,6 @@
     - debug:
         var: vmware
 
-  
+    - debug:
+        msg: '{{ cred_vmware_host }}:{{ cred_vmware_password }}@{{ cred_vmware_host }}'
+
