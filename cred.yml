@@ -4,6 +4,10 @@
     machine:
       username: '{{ ansible_user }}'
       password: '{{ ansible_password }}'
+    aws:
+      access_key: '{{ lookup("env", "AWS_ACCESS_KEY_ID") }}'
+      secret_key: '{{ lookup("env", "AWS_SECRET_ACCESS_KEY") }}'
+      security_token: '{{ lookup("env", "AWS_SECURITY_TOKEN") }}'
    
     vmware:
       host: '{{ lookup("env", "VCenter.Host") }}'
@@ -15,5 +19,7 @@
         var: machine
     - debug:
         var: vmware
+    - debug:
+        var: aws
 
     
