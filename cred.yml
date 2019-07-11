@@ -6,7 +6,7 @@
       password: '{{ ansible_password }}'
    
     vmware:
-      host: '{{ lookup("env", "VCenter Host") }}'
+      host: '{{ lookup("env", "VCenter.Host") }}'
       username: '{{ lookup("env", "Username") }}'
       password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
   
