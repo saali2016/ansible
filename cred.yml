@@ -10,8 +10,8 @@
       security_token: '{{ lookup("env", "AWS_SECURITY_TOKEN") }}'
    
     vmware:
-      host: '{{ lookup("env", "VCenter.Host") }}'
-      username: '{{ lookup("env", "Username") }}'
+      host: '{{ lookup("env", "VMWARE_HOST") }}'
+      username: '{{ lookup("env", "VMWARE_USER") }}'
       password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
   
   tasks:
