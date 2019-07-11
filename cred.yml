@@ -1,0 +1,19 @@
+- hosts: all
+
+  vars:
+    machine:
+      username: '{{ ansible_user }}'
+      password: '{{ ansible_password }}'
+   
+    vmware:
+      host: '{{ lookup("env", "VMWARE_HOST") }}'
+      username: '{{ lookup("env", "VMWARE_USER") }}'
+      password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
+   
+  tasks:
+    - debug:
+        var: machine
+    - debug:
+        var: vmware
+
+  
