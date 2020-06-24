@@ -1,0 +1,5 @@
+ - hosts: all
+   tasks:
+   - name: testing git version 
+     shell: "echo hello"
+   - debug: msg="{{ lookup('env','PROJECT_REVISION') }}
